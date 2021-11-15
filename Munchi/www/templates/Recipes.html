@@ -1,0 +1,21 @@
+<ion-view>
+    <ion-nav-title>
+<!--        <img src="/img/Munchi.png" height="25px;">-->
+        Recipes
+    </ion-nav-title>
+    <ion-content>      
+    <span class="list" ng-repeat="rec in recipes" >
+          <a class="item item-thumbnail-left item-icon-right" ng-click="gotoRecipeDetail(rec)">
+            <img src={{rec.image}}>
+            <h2>{{rec.name}}</h2>
+            <p>{{rec.time}}</p>
+            <span><button class="button button-dark button-small" id="brewButton">Brew</button></span>
+            <i class="icon ion-ios-arrow-right"></i>
+          </a>
+    </span>
+
+
+    </ion-content>
+</ion-view>
+
+

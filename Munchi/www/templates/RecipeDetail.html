@@ -1,0 +1,37 @@
+<ion-view>
+<ion-nav-title>{{rec.name}}</ion-nav-title>
+<ion-nav-buttons side="left">
+    <button class="button back-button buttons button-clear header-item" ng-click="$ionicGoBack()">
+      <i class="icon ion-android-arrow-back"></i>
+     
+    </button>
+  </ion-nav-buttons>
+
+<ion-content>
+<br>
+<center><img src={{rec.image}} alt="Coffee" width="288px" height="162px"></center>
+<h2 align="center">{{rec.name}}</h2>
+<h3 align="center">{{rec.time}}</h3>
+<center><hr style="width: 90%; height: 5px;"></center>
+<button class="button button-dark" style="float:right;margin-right:10px;margin-bottom:5px;">Brew</button>
+<h3 style="margin: 0px 15px;">Summary: </h3>
+<p style="margin: 0px 15px; text-align: justify;">
+	1. Set the temperature<br>
+	2. Set the time<br>
+	3. Click Start<br>
+	4. Enjoy your drink<br>
+</p>
+<center><hr style="width: 90%; height: 5px;"></center>
+
+
+<!-- <br>
+<center><img src={{rec.image}}></center>
+<h2 align="center">{{rec.name}}</h2>
+<h3 align="center">{{rec.time}}</h3>
+<center><hr style="width: 90%; height: 5px;"></center>
+<h3 style="margin: 0px 15px;">Summary: </h3>
+<p>{{rec.summary}}</p>
+<center><hr style="width: 90%; height: 5px;"></center> -->
+</ion-content>
+
+</ion-view>

@@ -1,0 +1,59 @@
+
+<ion-view>
+    <ion-nav-title>
+        <img src="/img/Munchi.png" height="25px;">
+    </ion-nav-title>
+  <ion-content>
+<div class="">
+  <span class="item item-icon-left">
+    <i class="icon ion-network"></i>
+    {{onStatus}}
+    <button style="float:right" class="button button-dark"
+            ng-click="turnMunchiOn()">{{onButton}}</button>
+      <p>{{MunchiTemp}}&deg</p>
+  </span>
+</div>
+<!--  </span><br style="line-height:2px;"> -->
+      <span id="temp"><p>{{cookTemp}}&deg</p></span>
+    
+<span style="display:inline-block;">  
+    <button class="tempButtons button button-dark button-clear button-large icon ion-plus-circled"
+            ng-click="increaseTemp()">   
+    </button>
+    <button class="tempButtons button button-dark button-clear button-large icon ion-minus-circled"
+            ng-click="decreaseTemp()">
+    </button>
+</span>
+    <button class="button button-dark heat" ng-click="heat({{cookTemp}})">Heat</button>
+      
+<div class="">
+
+  <label class="item item-input">
+    <div class="input-label">
+      Cook Time:
+    </div>
+      
+    <select>
+      <option>1 Min</option>
+      <option selected>2 Min</option>
+      <option>3 Min</option>
+      <option>4 Min</option>
+        <option>5 Min</option>
+        <option>6 Min</option>
+        <option>7 Min</option>
+        <option>8 Min</option>
+        <option>9 Min</option>
+        <option>10 Min</option>
+    </select>
+      
+    <select>
+        <option>0 Sec</option>
+        <option>30 Sec</option>
+    </select>
+<button class="button button-dark">Cook</button>
+    
+  </label>
+</div>
+
+  </ion-content>
+</ion-view>

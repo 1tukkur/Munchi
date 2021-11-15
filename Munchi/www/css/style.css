@@ -1,0 +1,48 @@
+/*RECIPE PAGE STYLES*/
+#brewButton{
+ 
+}
+
+
+
+
+
+
+
+
+
+
+/*MUNCHI PAGE STYLES*/
+#brewButton{
+
+}
+
+#brewButton2{
+    float: right;
+    
+}
+
+#temp{
+    font-size:30px;
+    border:4px solid black;
+    border-radius: 50%;
+    left:15px;
+    position:absolute;
+    width:100px;
+    height:100px;
+    text-align: center;
+    line-height: 90px;
+    margin-top: 10px;
+    display:inline;
+}
+
+.tempButtons{
+    left:100px;
+    display: block;
+}
+
+.heat{
+    float:right;
+    right:20px;
+    margin-top:35px;
+}
